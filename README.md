@@ -24,26 +24,13 @@ step-10:- create another file in src named App.js for react component.
 
 step-11:- create one more file in src named App.css that will contain the css properties of App.js component.
 
-spet-12:- your directory should look something like this 
-
-+-- public
-| +-- index.html
-+-- src
-| +-- App.css
-| +-- App.js
-| +-- index.js
-+-- .babelrc
-+-- package-lock.json
-+-- package.json
-+-- webpack.config.js
-
-step-13:- now, last step is to add this part of json code to your package.json file
+step-12:- now, last step is to add this part of json code to your package.json file
 
 "scripts": {
 "start": "webpack-dev-server --mode development"
 },
 
-step-14:- now in terminal execute npm start.
+step-13:- now in terminal execute npm start.
 
 
 
