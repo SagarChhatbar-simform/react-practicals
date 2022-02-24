@@ -1,0 +1,33 @@
+.addtodo {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50px;
+  background: #50e3a4;
+  position: fixed;
+  cursor: pointer;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 30px;
+}
+
+.addtodo button {
+  font-size: 50px;
+  border: 0;
+  background: transparent;
+  color: #46be8b;
+  cursor: pointer;
+}
+
+.formsegment {
+  width: 55vh;
+  position: absolute;
+  bottom: 10%;
+  background-color: white;
+}
+
+.inputfield input{
+  padding: 10px;
+  text-align: center;
+  border: 1px solid;
+}

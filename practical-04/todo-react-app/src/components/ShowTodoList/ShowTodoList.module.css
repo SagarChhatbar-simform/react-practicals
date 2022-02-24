@@ -1,0 +1,27 @@
+.showlist {
+  font-size: 20px;
+  overflow: scroll;
+  max-height: 380px;
+}
+
+.showlist div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showlist p {
+  margin: 0;
+}
+
+.delIcon {
+  cursor: pointer;
+}
+
+.taskCompletedIcon {
+  cursor: pointer;
+  color: #50e3a4;
+}
+
+.taskCompletedText{
+    opacity: 0.5;
+}
