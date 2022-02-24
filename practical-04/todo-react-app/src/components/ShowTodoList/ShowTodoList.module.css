@@ -1,6 +1,7 @@
 .showlist {
   font-size: 20px;
   overflow: scroll;
+  overflow-x: hidden;
   max-height: 380px;
 }
 
