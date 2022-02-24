@@ -1,7 +1,10 @@
 .showlist {
   font-size: 20px;
   overflow: scroll;
+<<<<<<< HEAD
   overflow-x: hidden;
+=======
+>>>>>>> Practical-03/04
   max-height: 380px;
 }
 
