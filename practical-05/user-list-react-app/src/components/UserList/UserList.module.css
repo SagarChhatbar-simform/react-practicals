@@ -1,0 +1,49 @@
+.username {
+  padding: 0px 8px;
+}
+
+.alignuser {
+  display: flex;
+  align-items: center;
+}
+.state {
+  align-items: center;
+  display: flex;
+}
+.access {
+  align-items: center;
+  display: flex;
+}
+.accessIcon {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.active {
+  color: #7af761;
+}
+
+.Parentdiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Listdiv {
+  width: 100%;
+}
+
+.Particular{
+  cursor: pointer;
+}
+
+.Particular:hover{
+  background-color: #feb24b;
+}
+
+.alignuser p {
+  margin: 0;
+  font-size: 11px;
+  display: flex;
+}

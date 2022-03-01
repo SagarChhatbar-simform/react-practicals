@@ -1,0 +1,33 @@
+.Users {
+  width: 165vh;
+  border-radius: 10px;
+  background-color: white;
+  padding: 25px;
+  color: #5b5b5b;
+}
+
+.Users ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Users li {
+  list-style: none;
+  width: 30%;
+  
+}
+
+
+.Users h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.Users img {
+  height: 50px;
+  border-radius: 65px;
+  object-fit: cover;
+}
+
