@@ -15,6 +15,7 @@
   height: 110px;
   border-radius: 60px;
   object-fit: cover;
+  width: 110px;
 }
 
 .Popupdiv h5 {
@@ -33,7 +34,15 @@
   font-size: 15px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
+
+.Popupdiv button:hover {
+  background-color: #b68035;
+
+}
+
+
 
 .prog {
   width: 165px;
