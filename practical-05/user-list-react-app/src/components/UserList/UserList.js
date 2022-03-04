@@ -1,19 +1,46 @@
 import styles from './UserList.module.css';
 import { Trash, Lock, ChevronDown } from 'react-feather';
-import { UserData } from '../../UserData';
+
+import { useState, useEffect } from 'react';
 
 const UserList = (props) => {
+
+
+    const [users, setUsers] = useState([]);
+    const [page, setPage] = useState(1);
+
+
+
+    useEffect(() => {
+
+        const fetchUser = async () => {
+            const res = await fetch("https://reqres.in/api/users?page=" + page.toString());
+            const json = await res.json();
+            setUsers(json.data);
+        };
+        fetchUser()
+
+    }, [page]);
+
+    const onPage1 = () => {
+        setPage(1);
+    };
+    const onPage2 = () => {
+        setPage(2);
+    };
+
+
     return (
         <div className={styles.Parentdiv}>
             <div className={styles.Listdiv} >
                 {
-                    UserData.map((list) => (
+                    users.map((list) => (
                         <div key={list.id} onMouseEnter={() => { props.onHoverHandler(list) }} className={styles.Particular}>
                             <ul>
                                 <li className={styles.alignuser}>
-                                    <img src={list.image} alt="user" />
+                                    <img src={list.avatar} alt="user" />
                                     <div className={styles.username}>
-                                        <h4>{list.name}</h4>
+                                        <h4>{list.first_name} {list.last_name}</h4>
                                         <p>{list.email}</p>
                                     </div>
                                 </li>
@@ -26,10 +53,17 @@ const UserList = (props) => {
                                 </li>
 
                             </ul>
+
                         </div>
                     ))
                 }
+                <div className={styles.pagebtn}>
+                    <button onClick={onPage1}>1</button>
+                    <button onClick={onPage2}>2</button>
+                </div>
             </div>
+
+
 
         </div>
     );
