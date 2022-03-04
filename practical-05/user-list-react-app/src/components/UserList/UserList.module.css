@@ -34,11 +34,11 @@
   width: 100%;
 }
 
-.Particular{
+.Particular {
   cursor: pointer;
 }
 
-.Particular:hover{
+.Particular:hover {
   background-color: #feb24b;
 }
 
@@ -47,3 +47,24 @@
   font-size: 11px;
   display: flex;
 }
+
+.pagebtn {
+  display: flex;
+  justify-content: center;
+}
+
+.pagebtn button {
+  background-color: #feb24b;
+  border: 0px;
+  padding: 8px;
+  width: 35px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 3px;
+  font-size: 0.8rem;
+}
+
+.pagebtn button:hover {
+  background-color: #b68035;
+}
+
