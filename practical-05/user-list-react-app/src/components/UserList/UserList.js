@@ -29,6 +29,7 @@ const UserList = (props) => {
         setPage(2);
     };
 
+   
 
     return (
         <div className={styles.Parentdiv}>
@@ -47,7 +48,7 @@ const UserList = (props) => {
                                 <li >{list.status === 'Active' ? <p className={styles.active}>Active </p> : <p className={styles.state}>Inactive <ChevronDown /></p>}</li>
                                 <li>
                                     <div className={styles.accessIcon}>
-                                        {list.access === 'Owner' ? <p>Owner</p> : <p className={styles.access}>{list.access} <ChevronDown /></p>}
+                                        {list.access === 'Owner' ? <p>Owner</p> : <p className={styles.access}>{list.access = "Read"} <ChevronDown /></p>}
                                         {list.access === 'Owner' ? <Lock /> : <Trash />}
                                     </div>
                                 </li>
