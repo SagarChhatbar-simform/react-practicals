@@ -3,12 +3,8 @@ import styles from './UserPopup.module.css';
 
 const UserPopup = (props) => {
 
-    var monthlyClicks = Math.ceil(Math.random() * 10000);
-    var clicksReviewed = Math.ceil(Math.random() * 10000);
-    var progress = Math.ceil(Math.random() * 100);
-
     const progressRandomize = {
-        width: progress + '%'
+        width: Math.ceil(Math.random() * 100) + '%'
     }
 
     return (
@@ -32,14 +28,14 @@ const UserPopup = (props) => {
             <div className={styles.numbersParent}>
                 <div>
                     <h2>
-                        {clicksReviewed}
+                        {Math.ceil(Math.random() * 10000)}
                     </h2>
                     <p>Clicks Reviewed</p>
                 </div>
                 <hr />
                 <div>
                     <h2>
-                        {monthlyClicks}
+                        {Math.ceil(Math.random() * 10000)}
                     </h2>
                     <p>Monthly Clicks</p>
                 </div>
