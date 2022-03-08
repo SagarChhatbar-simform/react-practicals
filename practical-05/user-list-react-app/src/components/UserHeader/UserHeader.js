@@ -1,6 +1,6 @@
 import React from "react";
 
-const UserHeader = () => {
+    const UserHeader = () => {
     return (
         <div>
             <ul>

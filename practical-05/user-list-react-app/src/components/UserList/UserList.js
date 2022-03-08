@@ -45,8 +45,8 @@ const UserList = (props) => {
                                 <li >{list.status === 'Active' ? <p className={styles.active}>Active </p> : <p className={styles.state}>Inactive <FaChevronDown /></p>}</li>
                                 <li>
                                     <div className={styles.accessIcon}>
-                                        {list.access === 'Owner' ? <p>Owner</p> : <p className={styles.access}>{list.access} <ChevronDown /></p>}
-                                        {list.access === 'Owner' ? <Lock /> : <Trash />}
+                                        {list.access === 'Owner' ? <p>Owner</p> : <p className={styles.access}>{list.access = "Read"} <FaChevronDown /></p>}
+                                        {list.access === 'Owner' ? <FaLock/> : <FaTrash/>}
                                     </div>
                                 </li>
                             </ul>
