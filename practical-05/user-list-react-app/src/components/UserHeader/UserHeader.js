@@ -1,4 +1,4 @@
-
+import React from "react";
 
     const UserHeader = () => {
     return (
@@ -12,4 +12,4 @@
     );
 };
 
-export default UserHeader;
+export default React.memo(UserHeader);
