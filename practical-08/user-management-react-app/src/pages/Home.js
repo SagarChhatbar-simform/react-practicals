@@ -23,15 +23,12 @@ function Home() {
 
   return (
     <div>
-      
         <p>{username}</p>
         <p>{email}</p>
         <p>{phone}</p>
         <img src={file} alt='' />
 
         <button onClick={logoutHandler}>logout</button>
-      
-
     </div>
   )
 }
