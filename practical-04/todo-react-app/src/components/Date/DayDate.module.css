@@ -1,0 +1,26 @@
+.mainDate{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.mainDate h1{
+    margin: 0;
+    font-size: 45px;
+    padding: 5px;
+}
+.mainDate p{
+    margin: 0;
+}
+
+.datediv{
+    display: flex;
+    align-items: center;
+}
+
+.monthyear{
+    font-size: 16px;
+}
+
