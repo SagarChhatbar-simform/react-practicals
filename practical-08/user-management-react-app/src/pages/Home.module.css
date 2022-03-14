@@ -1,0 +1,47 @@
+.logoutdiv {
+  background-color: #ccc;
+  height: 45px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.logoutdiv button {
+  padding: 8px 27px;
+  margin-right: 85px;
+  background-color: cornflowerblue;
+  border: 0px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbarinfo {
+  background-color: #ccc;
+  margin-top: 5px;
+  height: 85px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carddiv {
+  display: flex;
+  justify-content: center;
+
+}
+
+.card {
+  width: 30%;
+  background-color: cornflowerblue;
+  color: white;
+
+  margin-top: 5px;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 287px;
+  border-radius: 15px;
+  padding: 15px;
+}

@@ -1,34 +1,41 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useSelector } from 'react-redux';
+import { Navigate, useNavigate } from 'react-router-dom'
 
+import styles from './Home.module.css';
 
 
 function Home() {
 
-
-
-  const username = useSelector((state) => state.username);
-  const email = useSelector((state) => state.email);
-  const phone = useSelector((state) => state.phone);
-  const file = useSelector((state) => state.file);
-  const Navigate = useNavigate();
-
+  const useInfo = JSON.parse(localStorage.getItem("data"));
+  const nav = useNavigate();
 
 
   const logoutHandler = (event) => {
-    Navigate('/');
-  };
 
+    nav('/');
+    localStorage.clear();
+  };
 
   return (
     <div>
-        <p>{username}</p>
-        <p>{email}</p>
-        <p>{phone}</p>
-        <img src={file} alt='' />
+      {useInfo === null ? <Navigate to='/' /> :
+        <div>
+          <div className={styles.logoutdiv}>
+            <button onClick={logoutHandler}>logout</button>
+          </div>
+          <div className={styles.navbarinfo}>
+            Hello <h3>{useInfo.username}</h3>, you are registered with the email id <h3>{useInfo.email}</h3> and phone number  <h3>{useInfo.phone}</h3>
+          </div>
+          <div className={styles.carddiv}>
+            <div className={styles.card}>
+            <img src={useInfo.file} alt='' />
 
-        <button onClick={logoutHandler}>logout</button>
+              <h3>{useInfo.username}</h3>
+              <h3>{useInfo.email}</h3>
+              <h3>{useInfo.phone}</h3>
+            </div>
+          </div>
+        </div>}
     </div>
   )
 }

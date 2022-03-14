@@ -5,28 +5,23 @@ const initialValues = {
     password: '',
     username: '',
     phone: '',
-    file: null,
-    isLoggedIn:false,
+    file: '',
 }
 
-const userValReducer = (state = initialValues,action)=>{
+const userValReducer = (state = initialValues, action) => {
 
-    if(action.type === "Data"){
-        return{
+    if (action.type === "Data") {
+        return {
             username: action.username,
-            email:action.email,
-            phone:action.phone,
-            file:action.file,
-            isLoggedIn:true
+            email: action.email,
+            phone: action.phone,
+            file: action.file,
         }
+
     }
 
-    if(action.type === "Loggedout"){
-        return{
-            isLoggedIn:false
-        }
-    }
-} 
+
+}
 
 
 const store = createStore(userValReducer);
