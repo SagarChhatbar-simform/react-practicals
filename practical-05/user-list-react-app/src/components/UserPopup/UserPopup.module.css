@@ -1,0 +1,53 @@
+.Popupdiv {
+  position: absolute;
+  background-color: #fff;
+  right: -2%;
+  top: 9%;
+  box-shadow: 2px 4px 16px #5b5b5b;
+  border-radius: 45px;
+  text-align: center;
+  padding: 10px 35px;
+  height: 460px;
+  width: 220px;
+}
+
+.Popupdiv img {
+  height: 110px;
+  border-radius: 60px;
+  object-fit: cover;
+}
+
+.Popupdiv h5 {
+  text-align: start;
+}
+
+.Popupdiv p {
+  font-size: 0.8rem;
+  color: #5b5b5b;
+}
+
+.Popupdiv button {
+  color: white;
+  background-color: #feb24b;
+  padding: 15px 24px 15px 24px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+}
+
+.prog {
+  width: 165px;
+  height: 5px;
+  background-color: #feb24b;
+  border-radius: 5px;
+}
+
+.numbersParent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Popupdiv hr {
+  height: 30px;
+}
