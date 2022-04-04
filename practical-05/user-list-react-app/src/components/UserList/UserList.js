@@ -1,6 +1,6 @@
+import React from 'react';
 import styles from './UserList.module.css';
-import { Trash, Lock, ChevronDown } from 'react-feather';
-
+import { FaChevronDown,FaLock,FaTrash } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 
 const UserList = (props) => {
@@ -10,11 +10,10 @@ const UserList = (props) => {
     const [page, setPage] = useState(1);
 
 
-
     useEffect(() => {
 
         const fetchUser = async () => {
-            const res = await fetch("https://reqres.in/api/users?page=" + page.toString());
+            const res = await fetch(process.env.REACT_APP_API_ENDPOINT + page.toString());
             const json = await res.json();
             setUsers(json.data);
         };
@@ -28,8 +27,6 @@ const UserList = (props) => {
     const onPage2 = () => {
         setPage(2);
     };
-
-   
 
     return (
         <div className={styles.Parentdiv}>
@@ -45,14 +42,13 @@ const UserList = (props) => {
                                         <p>{list.email}</p>
                                     </div>
                                 </li>
-                                <li >{list.status === 'Active' ? <p className={styles.active}>Active </p> : <p className={styles.state}>Inactive <ChevronDown /></p>}</li>
+                                <li >{list.status === 'Active' ? <p className={styles.active}>Active </p> : <p className={styles.state}>Inactive <FaChevronDown /></p>}</li>
                                 <li>
                                     <div className={styles.accessIcon}>
-                                        {list.access === 'Owner' ? <p>Owner</p> : <p className={styles.access}>{list.access = "Read"} <ChevronDown /></p>}
-                                        {list.access === 'Owner' ? <Lock /> : <Trash />}
+                                        {list.access === 'Owner' ? <p>Owner</p> : <p className={styles.access}>{list.access = "Read"} <FaChevronDown /></p>}
+                                        {list.access === 'Owner' ? <FaLock/> : <FaTrash/>}
                                     </div>
                                 </li>
-
                             </ul>
 
                         </div>
@@ -70,4 +66,4 @@ const UserList = (props) => {
     );
 };
 
-export default UserList;
+export default React.memo(UserList);
