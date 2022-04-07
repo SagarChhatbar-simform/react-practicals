@@ -3,13 +3,11 @@ import styles from './UserPopup.module.css';
 
 const UserPopup = (props) => {
 
-
-    console.log();
     return (
         <div className={styles.Popupdiv} >
-            <img src={props.listId.image} alt='' />
+            <img src={props.listId.avatar} alt='' />
             <h4>
-                {props.listId.name}
+                {props.listId.first_name} {props.listId.last_name}
             </h4>
             <p>
                 {props.listId.email}
