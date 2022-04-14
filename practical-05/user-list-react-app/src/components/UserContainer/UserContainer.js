@@ -3,13 +3,13 @@ import styles from './UserContainer.module.css';
 import UserList from '../UserList/UserList';
 import UserPopup from '../UserPopup/UserPopup';
 import { useState } from 'react';
-
+import React from 'react';
 
 const UserContainer = () => {
 
     const [popup, setPopup] = useState(false);
 
-   const [listId, setListId] = useState();
+    const [listId, setListId] = useState();
 
     const onHoverHandler = (list) => {
         setPopup(true);
@@ -18,11 +18,7 @@ const UserContainer = () => {
 
     const onLeaveHandler = ()=>{
         setPopup(false);
-
     }
-
-
-
 
     return (
         <div onMouseLeave={onLeaveHandler}>

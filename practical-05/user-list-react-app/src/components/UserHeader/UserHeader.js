@@ -1,6 +1,6 @@
+import React from "react";
 
-
-const UserHeader = () => {
+    const UserHeader = () => {
     return (
         <div>
             <ul>
@@ -12,4 +12,4 @@ const UserHeader = () => {
     );
 };
 
-export default UserHeader;
+export default React.memo(UserHeader);

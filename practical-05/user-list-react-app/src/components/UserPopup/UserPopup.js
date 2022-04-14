@@ -11,7 +11,6 @@ const UserPopup = (props) => {
             </h4>
             <p>
                 {props.listId.email}
-
             </p>
             <h4>Your Plan : Standard</h4>
             <button>Active User</button>
