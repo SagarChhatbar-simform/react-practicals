@@ -1,0 +1,79 @@
+.mainDiv img {
+  height: 600px;
+}
+
+.mainDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.Form {
+  text-align: left;
+  display: flex;
+flex-direction: column;
+justify-content: center;
+width: 300px;
+}
+
+
+.Form input{
+  background-color: #FAEBD8;
+  border: 0px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.Form p{
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.Form label{
+  color: #323438;
+  padding: 8px;
+}
+
+.btn button {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 8px;
+  color: white;
+}
+
+.Form div{
+  color: red;
+}
+
+.photoadd{
+  padding:7px;
+  color: black;
+}
+.photo{
+  text-align: center;
+}
+.photo label{
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.photo label:hover{
+  background-color: rgb(163, 162, 162);
+}
+
+.submit{
+  background-color: #0C7AF6;
+}
+
+.submit:hover{
+  background-color: #0c52a1;
+
+}
+
+.reset{
+  background-color: #DA3348;
+}
+.reset:hover{
+  background-color: #a72738;
+}
